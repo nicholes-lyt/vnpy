@@ -1,11 +1,12 @@
+from vnpy.app.cta_strategy import CtaStrategyApp
 from vnpy.event import EventEngine
+from vnpy.gateway.huobi import HuobiGateway
 from vnpy.trader.engine import MainEngine
 from vnpy.trader.ui import MainWindow, create_qapp
-from vnpy.gateway.huobi import HuobiGateway
-from vnpy.app.cta_strategy import CtaStrategyApp
+
 
 def main():
-    """Start VN Trader"""
+    """Start Huobi Trader"""
     qapp = create_qapp()
 
     event_engine = EventEngine()
